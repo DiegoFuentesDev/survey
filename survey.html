@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body{
+            background-image: url(https://cdn.pixabay.com/photo/2018/05/14/16/54/cyber-3400789_1280.jpg);
+            font-family: Helvetica;
+            /* overflow: hidden; */
+        }
+
+        #title-header {
+            text-align: center;
+            align-items: center;
+            border-radius: 10em;
+            color: white;
+            font-size: 22px;
+        }
+
+        #survey-form{
+            text-align: left;
+            display: flex;
+            flex-direction: column;
+            background-color: aliceblue;
+            padding: 1em;
+            width: 45%;
+            margin: 0 auto;
+            border-radius: 20px;
+            font-size: 18px;;
+        }
+
+        input {
+            margin-bottom: 1.1em;
+        }
+
+        #proglang {
+            margin-bottom: 1.1em;
+            height: 21px;
+        }
+
+        span{
+            font-size: 15px;
+        }
+
+        textarea{
+            resize: none;
+        }
+
+        button{
+            background-color: rgb(41, 192, 129);
+            color: beige;
+            font-size: 22px;
+            border-radius: 20px;
+            border:0px;
+            cursor: pointer;
+        }
+
+        
+
+    </style>
+    <title>Diego Survey</title>
+</head>
+<body>
+    <div id="div-content">
+        <header id="title-header">
+            <h1 id="title">Diego´s Survey</h1>
+            <p id="description">Survey to get to know you better</p>
+        </header>
+    <!-- <div id="div-content">  -->
+        <form id="survey-form">
+            <!-- nombre -->
+            <label for="name" id="name-label">Name: </label>
+            <input type="text" name="name" id="name" placeholder="Enter your name" required>
+            <!-- email -->
+            <label for="email" id="email-label">E-Mail</label>
+            <input type="email" name="email" id="email" placeholder="Enter your e-mail" required>
+            <!-- numero -->
+            <label for="number" id="number-label">Number: </label>
+            <input type="number" name="number" id="number" min="1111111111" max="9999999999" placeholder="Enter your number" required>
+            
+            <!-- dropdown -->
+            <label for="dropdown-options" id="dropdown-label">What is your favorite Programming Languaje?</label>
+            <select name="progrlang" id="proglang" required>
+                <option disabled selected value>Select an option</option>
+                <option value="cplusplus">C ++</option>
+                <option value="java">Java</option>
+                <option value="Python">Python</option>
+                <option value="javascript">Java-Script</option>
+                <option value="objtc">Objective C</option>
+            </select>
+
+            <!-- radiobuttons 01 -->
+            <p>Where you have learned more about programming?</p>
+            <label id="fccamp">
+                <input type="radio" name="learnplace" id="fccamp" value="fccamp" checked>Free Code Camp
+            </label>
+            <label id="college">
+                <input type="radio" name="learnplace" id="college" value="college">College
+            </label>
+            <label id="udemy">
+                <input type="radio" name="learnplace" id="udemy" value="udemy">Udemy
+            </label>
+
+            <!-- radiobuttons 02 -->
+            <p>What is your English level?</p>
+            <label id="a1">
+                <input type="radio" name="englevel" id="a1" value="a1" checked>A1
+            </label>
+            <label id="a2">
+                <input type="radio" name="englevel" id="a2" value="a2">A2
+            </label>
+            <label id="b1">
+                <input type="radio" name="englevel" id="b1" value="b1">B1
+            </label>
+            <label id="b2">
+                <input type="radio" name="englevel" id="b2" value="b2">B2
+            </label>
+            <label id="c1">
+                <input type="radio" name="englevel" id="c1" value="c1">C1
+            </label>
+            <label id="c2">
+                <input type="radio" name="englevel" id="c2" value="c2">C2
+            </label>
+
+            <!-- checkboxes -->
+            <p>What would you like to learn?<span>(You can pick more than one option)</span></p>
+            <label>
+                <input type="checkbox" name="learn" id="bigdata" value="bigdata">Big-Data
+            </label>
+            <label>
+                <input type="checkbox" name="learn" id="machine-l" value="machine-l">Machine Learning
+            </label>
+            <label>
+                <input type="checkbox" name="learn" id="art-int" value="art-int">Artificial Intelligence
+            </label>
+            <label>
+                <input type="checkbox" name="learn" id="iothing" value="iothing">Internet of Things
+            </label>
+            <label>
+                <input type="checkbox" name="learn" id="none" value="none">None
+            </label>
+
+            <!-- textarea -->
+            <p>Tell me a little bit about you:</p>
+            <textarea name="aboutyou" id="aboutyou" cols="30" rows="10" placeholder="Write here..." required></textarea>
+
+            <!-- boton de submit -->
+            <p>Ready submit?...</p>
+            <button type="submit" id="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>
