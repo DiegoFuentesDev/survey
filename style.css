@@ -1,0 +1,51 @@
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2018/05/14/16/54/cyber-3400789_1280.jpg);
+    font-family: Helvetica;
+    /* overflow: hidden; */
+}
+
+#title-header {
+    text-align: center;
+    align-items: center;
+    border-radius: 10em;
+    color: white;
+    font-size: 22px;
+}
+
+#survey-form{
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    background-color: aliceblue;
+    padding: 1em;
+    width: 45%;
+    margin: 0 auto;
+    border-radius: 20px;
+    font-size: 18px;;
+}
+
+input {
+    margin-bottom: 1.1em;
+}
+
+#proglang {
+    margin-bottom: 1.1em;
+    height: 21px;
+}
+
+span{
+    font-size: 15px;
+}
+
+textarea{
+    resize: none;
+}
+
+button{
+    background-color: rgb(41, 192, 129);
+    color: beige;
+    font-size: 22px;
+    border-radius: 20px;
+    border:0px;
+    cursor: pointer;
+}
